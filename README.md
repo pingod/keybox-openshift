@@ -9,12 +9,16 @@ for [KeyBox](https://github.com/skavanagh/KeyBox).
 **Please note**: KeyBox runs without TLS! Terminating TLS is the job of the
 loadbalancer / reverse proxy in front of it (like the OpenShift router).
 
-## Docker run
+## Docker build
 
 Example for running KeyBox in Docker:
 
 ```
-docker build -t local/keybox .
+docker build -t registry.cn-hangzhou.aliyuncs.com/sourcegarden/keybox:v0.1 .
+```
+
+## Docker run
+```
 docker run --name keybox \
   -d \
   --user 1000001:root \
