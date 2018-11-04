@@ -21,7 +21,7 @@ docker run --name keybox \
   -e DB_PASSWORD=blablubb \
   -p 8080:8080 \
   -v keybox_data:/opt/keybox/jetty/keybox/WEB-INF/classes/keydb \
-  local/keybox
+  tobru/keybox
 ```
 
 ## Configuration
